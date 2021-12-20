@@ -10,18 +10,20 @@ This installer designed to work with https://console.redhat.com/openshift assist
 ### Steps to be followed
 1. Clone/Download this repository to your CloudShell (Will update orahub url later. Please use attached zip for the moment)
 2. Generate OpenSSH key pairs using ssh-keygen if you do not have it already on your CloudShell environment
-3. Go to Assisted Cluster Creation Wizard on RedHat OpenShift Conole and copy live ISO download command after providing your ssh public key
-4. Edit terraform.tfvars file with your tenancy information
-5. Execute terraform apply command and wait until process completed.
-6. RedHat OpenShift Console will show amber color warning when Instances got boot back to the live ISO (Expected Situation). 
-7.Please note that the OpenShift Console will take upto 5-10 mins to show up instance upon creation. So have some patience on the process.
-8. Now, goto the openshift console, you can see the assisted cluster is ready.
+3. signup for redhat account
+4. Go to Assisted Cluster Creation Wizard on RedHat OpenShift Conole and copy live ISO download command after providing your ssh public key
+5. Edit terraform.tfvars file with your tenancy information
+6. Execute terraform apply command and wait until process completed.
+7. RedHat OpenShift Console will show amber color warning when Instances got boot back to the live ISO (Expected Situation). 
+8.Please note that the OpenShift Console will take upto 5-10 mins to show up instance upon creation. So have some patience on the process.
+9. Now, goto the openshift console, you can see the assisted cluster is ready.
 if you find "disk insufficient error, make sure that, NVME diask has been selected for booting.
 
 ![image](https://user-images.githubusercontent.com/26675416/146725950-dd02d4ed-bccc-4a59-bb5a-ef35b914b4e9.png)
 
 9. click on next for the cluster installation.
 10. once the installation is complete, you can use the credentials to login to the cluster nodes.
+
 ![image](https://user-images.githubusercontent.com/26675416/146726221-67f97301-0676-44a6-9b25-770f86451b23.png)
 
 Please make sure to download kubeconfig file from OpenShift Assisted Cluster Installation page and it will be available to download from the console for 20 days..
