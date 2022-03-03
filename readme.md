@@ -1,7 +1,7 @@
 ## Install openshift on Bare metal instance
 
 ### Instructions
-Please note that this terraform script is designed to used only with-in CloudShell on your Oracle Cloud Account.
+Please note that this terraform script is designed to used with CloudShell on your Oracle Cloud Account.
 And make sure that you have enough privileges to create resources or manage tenancy before executing this script. 
 You should have your own Domain and Point to the Name Servers provided at the end of the Terraform script execution.
 
